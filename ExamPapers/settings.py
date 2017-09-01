@@ -152,10 +152,10 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-	'ExamPapers.DBManagement',
+	#'ExamPapers.DBManagement',
 	'bio',
-	'ExamPapers.resource',
-	'ExamPapers.dajaxice',
+	#'ExamPapers.resource',
+	#'ExamPapers.dajaxice',
 )
 
 

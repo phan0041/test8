@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Math Analyzer</title>
+		<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/static/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+	<body>
+		{% include 'eheader.html' %}
+		<div class="hero-unit" style="background-image:url('/static/image/pattern.jpg'); margin-bottom:0px;line-height:80px;border-radius: 0px;">
+			<h1 style="color:#EEEEEE;">Math Analyzer - Elementary Mathematics</h1>
+			<p style="color:#EEEEEE;">A simple Mathematics data analyzer that aims to bridge the gap of learning Mathematics.</p>
+			<p>
+				<a class="btn btn-primary btn-large" href="/analyzer/2/">
+				Try now
+				</a>
+			</p>
+		</div>
+		{% include 'searchbar.html' %}
+		<div class="row-fluid" style="text-align:center; valign:bottom;padding-top:20px;">
+			<h1 style="margin-bottom:50px">Introducing Math Analyzer - Elementary Mathematics.</h1>
+			<ul class="thumbnails">
+				 <li class="span4">
+					<div class="thumbnail" style="border:0px;border-radius:0px;box-shadow:none;">
+						<img src="/static/image/view.png" width="100" alt="View Paper" />
+						<h3>View Paper</h3>
+						<p>View the papers from over a decade with solutions provided</p>
+						<br/>
+						<a class="btn btn-info" href="/mathsection/2/">View Now >></a>
+					</div>
+				</li>
+				<li class="span4">
+					<div class="thumbnail" style="border:0px;border-radius:0px;box-shadow:none;">
+						<img src="/static/image/analyze.png" width="78" alt="Analyze Paper" />
+						<h3>Analyzer</h3>
+						<p>Analyze the Mathematics collection with interesting data mining tools, and be amazed by the results</p>
+						<a class="btn btn-info" href="/analyzer/2/">Analyze Now >></a>
+					</div>
+				</li>
+				<li class="span4">
+					<div class="thumbnail" style="border:0px;border-radius:0px;box-shadow:none;">
+						<img src="/static/image/admin.png" width="150" alt="Admin" />
+						<h3>Settings</h3>
+						<p>Customize the settings</p>
+						<br/>
+						<a class="btn btn-info" href="/admin/">Customize Now >></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<hr>
+		<div class="row-fluid" style="text-align:center;">
+			<h1>We need your feedback.</h1>
+			<div class="row-fluid" style="margin-top:20px;">
+				<h4>Let us know your feedback about our system to allow us to improve further.</h4>
+				<a class="btn btn-success btn-large" href="http://www.surveymonkey.com/s/TJTZC5H">Feedback Now <i class="icon-comment icon-white"></i></a>
+			</div>
+			</div>
+		</div>
+	</body>
+	{% include 'footer.html' %}
+</html>

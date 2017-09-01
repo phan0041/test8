@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Math Analyzer</title>
+		<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/static/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+	<body>
+		{% include 'header.html' %}
+		
+		
+		<br><br><br>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<h1>{{cur_subj.title}}</h1>
+				<hr>
+				<h3>Choose by Paper:</h3>
+				<form name="papers" action="/question/paper/{{cur_subj.id}}/1/" method="get">
+					<div class="row-fluid">
+						<div class="span11">
+							<select name="list_id" style="width:100%">
+								{% for p in papers%}
+								<option value="{{p.id}}">{{p.year}} {{p.month}} Paper {{p.number}}</option>
+								{% endfor %}											
+							</select>
+						</div>
+						<div class="span1">
+							<input type="submit" class="btn btn-primary" id="submit" name="submit" value="Submit"/>
+						</div>
+					</div>
+				</form>
+				
+				
+				<h3>Choose by Topic:</h3>
+				<form name="papers" action="/question/topic/{{cur_subj.id}}/1/" method="get">
+					<div class="span1">Topic :</div>
+					<div class="span3">
+						<select name="list_id" style="width:100%">
+								{% for t in topics %}
+											{% if t.id != 13 %}
+												<option value="{{t.id}}" {% if t.id == topic_id %} selected {% endif %}>{{t.title}}</option>
+											{% endif %}
+										{% endfor %}
+										
+										{% for t in topics %}
+											{% if t.id == 13 %}
+												<option value="{{t.id}}" >{{t.title}}</option>
+											{% endif %}
+										{% endfor %}
+							</select>
+					</div>
+					
+					<div class="span2"></div>
+					<div class="span1">Period</div>
+					
+					<div class="span2">
+						<select name="paperset_id_start" style="width:100%">
+							{% for p in papersets%}
+								<option value="{{p.id}}" {% if p.id == paperset_id_start %} selected {% endif %}>{{p.title}}</option>
+							{% endfor %}											
+						</select>
+					</div>
+					<div class="span2">
+						<select name="paperset_id_end" style="width:100%">
+							{% for p in papersets%}
+								<option value="{{p.id}}" {% if p.id == last.id %} selected {% endif %}>{{p.title}}</option>
+							{% endfor %}											
+						</select>
+					</div>
+					<div class="span1">
+						<input type="submit" class="btn btn-primary" id = "submit" name="submit" value="Submit"/>
+					</div>
+					
+				</form>	
+			</div>
+		</div>
+	</body>
+	{% include 'footer.html' %}
+</html>

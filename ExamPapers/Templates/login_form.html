@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Math Analyzer</title>
+		<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/static/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+	<body>
+		{% include 'header.html' %}
+		<div align="center"><br><br><br><h1>Welcome to Login<h1><br><br><br><br>
+		<form action="/login_process/" method="get">
+			
+			<h6>Username: <input type="text" name="username"></h6>
+			<h6>Password: <input type="text" name="password"></h6>
+			<input type="submit" value="Login">
+		</form>
+		</div>
+	</body>
+	{% include 'footer.html' %}
+</html>

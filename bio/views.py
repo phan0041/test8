@@ -17,7 +17,7 @@ def home(request):
     param={}
     return render_to_response('home.html',param)
 
-def webproject(request):
+def entre(request):
     param={}
     return render_to_response('web-project.html',param)
 

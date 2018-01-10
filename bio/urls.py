@@ -10,5 +10,6 @@ urlpatterns = [
     url(r'^experience/$', views.experience, name='experience'),
     url(r'^volunteer/$', views.volunteer, name='volunteer'),
     url(r'^contact/$', views.contact, name='contact'),
+	url(r'^story/$', views.story, name='story'),
 
 ]

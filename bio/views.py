@@ -32,3 +32,7 @@ def volunteer(request):
 def contact(request):
     param={}
     return render_to_response('contact.html',param)
+
+def story(request):
+    param={}
+    return render_to_response('story.html',param)

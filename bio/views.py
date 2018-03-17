@@ -7,10 +7,16 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.shortcuts import render
 import MySQLdb
+from django.http import HttpResponseRedirect
 
 
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
+
+def ntu(request):
+    param={}
+    url='/static/ntu/patient/index.html'
+    return HttpResponseRedirect(url)
 
 
 def home(request):

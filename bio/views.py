@@ -15,7 +15,7 @@ def index(request):
 
 def ntu(request):
     param={}
-    url='/static/ntu/patient/index.html'
+    url='/static/ntu/login/index.html'
     return HttpResponseRedirect(url)
 
 

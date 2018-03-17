@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flat HTML5/CSS3 Login Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body style = "background:#cce6ff">
+
+  <div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form" id = "form1">
+      <input type="text" placeholder="username" id = "username"/>
+      <input type="password" placeholder="password" id = "password" />
+
+    </form>
+    <button onclick="myFunction()">Submit</button>
+
+    <p class="message">Not registered? <a href="#">Create an account</a></p>
+    <div id="fh5co-logo"><a href="./../search/index.html">Go to search</a></div>
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+<script>
+
+function myFunction() {
+      if ($(username).val() == "doctor"){
+    window.location = "./../patient/nurse-index.html";
+   }else if ($(username).val() == "nurse"){
+
+  window.location = "./../patient/nurse-index.html";
+
+   }
+  else if ($(username).val() == "patient"){
+
+  window.location = "./../patient/index.html";
+
+   }
+   else if ($(username).val() == "owner"){
+    window.location = "./../patient/owner-index.html";
+   }
+   else{
+   alert("Login Failed!");
+   }
+
+}
+
+  $("#form1").on('submit',function(e){
+
+  if ($(username).val() == "doctor"){
+    alert("doc");
+   }
+  if ($(username).val() == "patient"){
+  alert("patient");
+  window.location.herf = "http://www.yoururl.com";
+   }
+   if ($(username).val() == "owner"){
+    alert("owner");
+   }
+   URL="http://www.yoururl.com";
+   header('Location: '.$URL);
+window.location.href = "http://www.yoururl.com";
+
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

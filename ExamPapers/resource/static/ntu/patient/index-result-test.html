@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<head>
+	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>ShareMed</title>
@@ -9,12 +9,12 @@
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="gettemplates.co" />
 
-	<!--
+	<!-- 
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE
+	FREE HTML5 TEMPLATE 
 	DESIGNED & DEVELOPED by FreeHTML5.co
-
+		
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -23,7 +23,7 @@
 	//////////////////////////////////////////////////////
 	 -->
 
-	<!-- Facebook and Twitter integration -->
+  	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -34,7 +34,7 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<style>
+		<style>
        #map {
         height: 400px;
         width: 100%;
@@ -42,8 +42,8 @@
     </style>
 
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
-
+		<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -61,12 +61,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<![endif]-->
 
-</head>
-<body style="background-color:#ffe6e6" onload="myFunction4()">
-
-<div class="fh5co-loader"></div>
-
-<div id="page">
+	</head>
+	<body style="background-color:#ffe6e6" onload="myFunction4()">
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
@@ -84,7 +84,7 @@
 					</ul>
 				</div>
 			</div>
-
+			
 		</div>
 	</nav>
 
@@ -112,15 +112,14 @@
 							<h4  style = "width:100px;display:inline-block" >Service: </h4>
 							<input style = "width:200px;display:inline-block" type="text" id = "service" value="dementia" name="fname"><br>
 							<button onclick="search()" class="btn btn-default">Search</button>
-							<br><br>
+							<br>
 						</div>
 						<div>
-
-							<div name="map-div" style="float:left;display:inline-block;width:400px;vertical-align: top;">
+							<div name="map-div" style="display:inline-block;width:400px;vertical-align: top;">
 								<h3>Maps</h3>
 								<div id="map"></div>
 							</div>
-							<div name="result-div" align="left" style="float:left;display:inline-block;padding:0 0 0 30px;vertical-align: top;">
+							<div name="result-div" align="left" style="display:inline-block;padding:0 0 0 30px;vertical-align: top;">
 								<h3>Results</h3>
 								<div id = "result">
 
@@ -155,7 +154,6 @@ var uluru = {lat: latitude, lng: longitude};
         });
         var marker = new google.maps.Marker({
           position: uluru,
-          label: 'A',
           map: map
         });
 
@@ -234,19 +232,16 @@ for (i = 0; i < li.length; i++) {
     it = li[i];
     //alert(place[it]["name"]);
 
-    content = `<div style="color:black;">
+    content = `<div style="color:black">
 												<a href="./../detail-combine/view-detail.html" style="color:red">`+place[it]["name"]+` </a>
-
 												<br>
 												&nbsp;&nbsp;&nbsp;Address: `+place[it]["address"]+`
 												<br>
 												&nbsp;&nbsp;&nbsp;Capacity: `+place[it]["capacity"]+`
+												<br>
 												&nbsp;&nbsp;&nbsp;Available slot: `+place[it]["alr_in"]+`
 
-
-											</div>
-
-											`
+											</div>`
  	$("#result").append(content);
 }
 
@@ -317,42 +312,42 @@ for (i = 0; i < li.length; i++) {
 				</div>
 
 
-				<div class="row copyright">
-					<div class="col-md-12 text-center">
-						<p>
-							<small class="block">&copy; 2018 NTU Startathon</small>
-							<small class="block">Designed by ShareMed team</small>
-						</p>
-						<p>
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2018 NTU Startathon</small>
+						<small class="block">Designed by ShareMed team</small>
+					</p>
+					<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
 							<li><a href="#"><i class="icon-linkedin"></i></a></li>
 							<li><a href="#"><i class="icon-dribbble"></i></a></li>
 						</ul>
-						</p>
-					</div>
+					</p>
 				</div>
-
 			</div>
+
+		</div>
 	</footer>
-</div>
+	</div>
 
-<div class="gototop js-top">
-	<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-</div>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
 
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- Main -->
-<script src="js/main.js"></script>
-
-</body>
+	</body>
 </html>
 

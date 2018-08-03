@@ -8,6 +8,8 @@ from django.shortcuts import render_to_response
 from django.shortcuts import render
 import MySQLdb
 from django.http import HttpResponseRedirect
+from django.shortcuts import redirect
+
 
 
 def index(request):

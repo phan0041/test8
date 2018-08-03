@@ -42,3 +42,7 @@ def contact(request):
 def story(request):
     param={}
     return render_to_response('story.html',param)
+
+def profile(request):
+    param={}
+    return redirect('https://www.linkedin.com/in/dan-phan-1349307b/')

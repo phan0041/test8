@@ -13,5 +13,6 @@ urlpatterns = [
 	url(r'^story/$', views.story, name='story'),
 	url(r'^ntu/$', views.ntu, name='ntu'),
 	url(r'^profile/$', views.profile, name='profile'),
+	url(r'^linkedin/$', views.profile, name='profile'),
 
 ]
